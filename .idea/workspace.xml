@@ -1,11 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="e41ae7e2-674d-4c8b-8abf-e45fe279d4b9" name="Changes" comment="" />
+    <list default="true" id="e41ae7e2-674d-4c8b-8abf-e45fe279d4b9" name="Changes" comment="Init:In the beginning God created the heaven and the earth">
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/neuefische/Order.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/neuefische/OrderRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/neuefische/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/neuefische/ProductRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/neuefische/ShopService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/de/neuefische/ShopServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/neuefische/Main.java" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageOptionsProvider">
+    <option name="myAddOrReplace" value="0" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="JUnit5 Test Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2ILp0EuN3ZeXYCWgznQQpzlhBr9" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -17,9 +47,113 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false"
+    "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="de.neuefische" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.ShopServiceTest">
+    <configuration name="ShopServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BestellsystemFreitagsaufgabe" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="de.neuefische.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="de.neuefische" />
+      <option name="MAIN_CLASS_NAME" value="de.neuefische.ShopServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ShopServiceTest.addOrderShopService" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BestellsystemFreitagsaufgabe" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="de.neuefische.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="de.neuefische" />
+      <option name="MAIN_CLASS_NAME" value="de.neuefische.ShopServiceTest" />
+      <option name="METHOD_NAME" value="addOrderShopService" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ShopServiceTest.addOrderWithProductsThatDontExistsInRepo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BestellsystemFreitagsaufgabe" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="de.neuefische.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="de.neuefische" />
+      <option name="MAIN_CLASS_NAME" value="de.neuefische.ShopServiceTest" />
+      <option name="METHOD_NAME" value="addOrderWithProductsThatDontExistsInRepo" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ShopServiceTest.getOrderShopService" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BestellsystemFreitagsaufgabe" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="de.neuefische.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="de.neuefische" />
+      <option name="MAIN_CLASS_NAME" value="de.neuefische.ShopServiceTest" />
+      <option name="METHOD_NAME" value="getOrderShopService" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ShopServiceTest.listOrdersShopService" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BestellsystemFreitagsaufgabe" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="de.neuefische.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="de.neuefische" />
+      <option name="MAIN_CLASS_NAME" value="de.neuefische.ShopServiceTest" />
+      <option name="METHOD_NAME" value="listOrdersShopService" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.ShopServiceTest" />
+        <item itemvalue="JUnit.ShopServiceTest.listOrdersShopService" />
+        <item itemvalue="JUnit.ShopServiceTest.getOrderShopService" />
+        <item itemvalue="JUnit.ShopServiceTest.addOrderShopService" />
+        <item itemvalue="JUnit.ShopServiceTest.addOrderWithProductsThatDontExistsInRepo" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -28,7 +162,48 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1669970494202</updated>
+      <workItem from="1669970495468" duration="38038000" />
     </task>
+    <task id="LOCAL-00001" summary="Init:In the beginning God created the heaven and the earth">
+      <created>1669970694160</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1669970694160</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Init:In the beginning God created the heaven and the earth" />
+    <option name="LAST_COMMIT_MESSAGE" value="Init:In the beginning God created the heaven and the earth" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/BestellsystemFreitagsaufgabe$ShopServiceTest.ic" NAME="ShopServiceTest Coverage Results" MODIFIED="1670021505827" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>de.neuefische.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/BestellsystemFreitagsaufgabe$ShopServiceTest_doTheseProductsExistTest.ic" NAME="ShopServiceTest.doTheseProductsExistTest Coverage Results" MODIFIED="1669985399958" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>de.neuefische.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/BestellsystemFreitagsaufgabe$ShopServiceTest_addOrderWithProductsThatExistsInRepo.ic" NAME="ShopServiceTest.addOrderWithProductsThatExistsInRepo Coverage Results" MODIFIED="1669989175638" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>de.neuefische.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/BestellsystemFreitagsaufgabe$ShopServiceTest_doTheseProductsExistInProductRepo.ic" NAME="ShopServiceTest.doTheseProductsExistInProductRepo Coverage Results" MODIFIED="1669988308590" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>de.neuefische.*</FILTER>
+    </SUITE>
   </component>
 </project>
