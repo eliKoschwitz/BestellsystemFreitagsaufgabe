@@ -179,7 +179,7 @@ class ShopServiceTest {
     }
 
     @Test
-    void addOrderWithProductsThatDontExistsInRepo(){
+    void addOrderWithProductsThatDontExistsInRepo() {
         // GIVEN
         List<Product> produktsToBeOrder = List.of(new Product(1, "Apfel"), new Product(2, "Brine"));
         ProductRepo productRepo = new ProductRepo(List.of(new Product(1, "Apfel")));
@@ -196,6 +196,20 @@ class ShopServiceTest {
             Assertions.assertTrue(true);
         }
     }
+    @Test
+    void makeOrderShopService() {
+        // GIVEN
+        OrderRepo orderRepo = new OrderRepo();
+        OrderRepo orderRepoExpected = new OrderRepo(new ArrayList<>(List.of(new Order(1, new ArrayList<Product>(List.of(new Product(1, "Apfel")))))));
+        ProductRepo productRepo = new ProductRepo(new ArrayList<>(List.of(new Product(1, "Apfel"))));
+        ShopService shopService = new ShopService(orderRepo,productRepo);
+        // WHEN
+        shopService.makeOrder(1, "Apfel");
+        // THEN
+        Assertions.assertEquals(orderRepoExpected.get(1).toString(), orderRepo.get(1).toString());
+    }
+}
+
 
     /*
     void giveMeAllProductsButAddThemBefore() {
@@ -255,4 +269,3 @@ class ShopServiceTest {
      */
 
 
-}

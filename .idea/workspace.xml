@@ -4,16 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e41ae7e2-674d-4c8b-8abf-e45fe279d4b9" name="Changes" comment="Init:In the beginning God created the heaven and the earth">
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/neuefische/Order.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/neuefische/OrderRepo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/neuefische/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/neuefische/ProductRepo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/neuefische/ShopService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/de/neuefische/ShopServiceTest.java" afterDir="false" />
+    <list default="true" id="e41ae7e2-674d-4c8b-8abf-e45fe279d4b9" name="Changes" comment="Order Service Done&#10;Developed with TDD&#10;All Tests are running fine">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/neuefische/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/neuefische/ShopService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/neuefische/ShopService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/de/neuefische/ShopServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/de/neuefische/ShopServiceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,19 +37,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -64,7 +58,7 @@
       <recent name="de.neuefische" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ShopServiceTest">
+  <component name="RunManager" selected="JUnit.ShopServiceTest.makeOrderShopService">
     <configuration name="ShopServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="BestellsystemFreitagsaufgabe" />
       <extension name="coverage">
@@ -91,22 +85,6 @@
       <option name="PACKAGE_NAME" value="de.neuefische" />
       <option name="MAIN_CLASS_NAME" value="de.neuefische.ShopServiceTest" />
       <option name="METHOD_NAME" value="addOrderShopService" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ShopServiceTest.addOrderWithProductsThatDontExistsInRepo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="BestellsystemFreitagsaufgabe" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="de.neuefische.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="de.neuefische" />
-      <option name="MAIN_CLASS_NAME" value="de.neuefische.ShopServiceTest" />
-      <option name="METHOD_NAME" value="addOrderWithProductsThatDontExistsInRepo" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -144,13 +122,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ShopServiceTest.makeOrderShopService" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BestellsystemFreitagsaufgabe" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="de.neuefische.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="de.neuefische" />
+      <option name="MAIN_CLASS_NAME" value="de.neuefische.ShopServiceTest" />
+      <option name="METHOD_NAME" value="makeOrderShopService" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ShopServiceTest.makeOrderShopService" />
         <item itemvalue="JUnit.ShopServiceTest" />
         <item itemvalue="JUnit.ShopServiceTest.listOrdersShopService" />
         <item itemvalue="JUnit.ShopServiceTest.getOrderShopService" />
         <item itemvalue="JUnit.ShopServiceTest.addOrderShopService" />
-        <item itemvalue="JUnit.ShopServiceTest.addOrderWithProductsThatDontExistsInRepo" />
       </list>
     </recent_temporary>
   </component>
@@ -162,7 +156,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1669970494202</updated>
-      <workItem from="1669970495468" duration="38038000" />
+      <workItem from="1669970495468" duration="39802000" />
+      <workItem from="1670166554554" duration="930000" />
     </task>
     <task id="LOCAL-00001" summary="Init:In the beginning God created the heaven and the earth">
       <created>1669970694160</created>
@@ -171,7 +166,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669970694160</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Order Service Done&#10;Developed with TDD&#10;All Tests are running fine">
+      <created>1670021803243</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1670021803243</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -190,10 +192,11 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Init:In the beginning God created the heaven and the earth" />
-    <option name="LAST_COMMIT_MESSAGE" value="Init:In the beginning God created the heaven and the earth" />
+    <MESSAGE value="Order Service Done&#10;Developed with TDD&#10;All Tests are running fine" />
+    <option name="LAST_COMMIT_MESSAGE" value="Order Service Done&#10;Developed with TDD&#10;All Tests are running fine" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/BestellsystemFreitagsaufgabe$ShopServiceTest.ic" NAME="ShopServiceTest Coverage Results" MODIFIED="1670021505827" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/BestellsystemFreitagsaufgabe$ShopServiceTest.ic" NAME="ShopServiceTest Coverage Results" MODIFIED="1670021681606" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>de.neuefische.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/BestellsystemFreitagsaufgabe$ShopServiceTest_doTheseProductsExistTest.ic" NAME="ShopServiceTest.doTheseProductsExistTest Coverage Results" MODIFIED="1669985399958" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

@@ -1,14 +1,38 @@
 package de.neuefische;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
+import java.util.Scanner;
 
 public class ShopService {
     private OrderRepo orderRepo = new OrderRepo();
     private ProductRepo productRepo = new ProductRepo();
 
-    void makeOrder(){}
+    public static void main(String[] args){
+        /*
+        makeOrder(1, "Apfel");
+         */
+    }
 
+    /*
+    void makeOrder(){
+        System.out.println("Gib die Bestellung ein -> id;Product Name");
+        String id;
+        String productName;
+        Scanner userInput = new Scanner(System.in);
+        while(true) {
+            id = userInput.next(";");
+            productName = userInput.next(";");
+
+            Product product = new Product();
+            List<Product> productList = new ArrayList<>(List.of(products.split(" ")));
+            productList.add(productRepo.get(i));
+            Order orderMade = new Order(i, productList);
+            orderRepo.add(orderMade);
+        }
+    }
+     */
 
     public Product getProduct(int i) {
         return productRepo.get(i);
@@ -31,11 +55,6 @@ public class ShopService {
                 throw new IndexOutOfBoundsException("Produkt nicht vorhanden");
             }
         }
-    }
-
-
-
-    public ShopService() {
     }
 
     public ShopService(OrderRepo orderRepo, ProductRepo productRepo) {
