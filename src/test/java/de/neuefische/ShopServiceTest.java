@@ -196,6 +196,8 @@ class ShopServiceTest {
             Assertions.assertTrue(true);
         }
     }
+
+    /*
     @Test
     void makeOrderShopService() {
         // GIVEN
@@ -208,6 +210,8 @@ class ShopServiceTest {
         // THEN
         Assertions.assertEquals(orderRepoExpected.get(1).toString(), orderRepo.get(1).toString());
     }
+
+     */
 }
 
 
