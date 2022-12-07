@@ -7,8 +7,9 @@ public class OrderRepo {
 
     private List<Order> orders;
 
-    void add(Order order){
-        orders.add(order);
+    // die wird gemockt
+    boolean add(Order order){
+        return orders.add(order);
     }
 
     public List<Order> list() {

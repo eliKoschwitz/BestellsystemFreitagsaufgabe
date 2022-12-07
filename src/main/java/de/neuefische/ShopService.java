@@ -1,38 +1,17 @@
 package de.neuefische;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
-import java.util.Scanner;
+
 
 public class ShopService {
-    private OrderRepo orderRepo = new OrderRepo();
-    private ProductRepo productRepo = new ProductRepo();
+    private OrderRepo orderRepo;
+    private ProductRepo productRepo;
 
-    public static void main(String[] args){
-        /*
-        makeOrder(1, "Apfel");
-         */
+    public ShopService(OrderRepo orderRepo, ProductRepo productRepo) {
+        this.orderRepo = orderRepo;
+        this.productRepo = productRepo;
     }
-
-    /*
-    void makeOrder(){
-        System.out.println("Gib die Bestellung ein -> id;Product Name");
-        String id;
-        String productName;
-        Scanner userInput = new Scanner(System.in);
-        while(true) {
-            id = userInput.next(";");
-            productName = userInput.next(";");
-
-            Product product = new Product();
-            List<Product> productList = new ArrayList<>(List.of(products.split(" ")));
-            productList.add(productRepo.get(i));
-            Order orderMade = new Order(i, productList);
-            orderRepo.add(orderMade);
-        }
-    }
-     */
 
     public Product getProduct(int i) {
         return productRepo.get(i);
@@ -42,9 +21,9 @@ public class ShopService {
         return productRepo.list();
     }
 
-    void addOrder(Order order){
+    boolean addOrder(Order order){
         checkProductsExist(order.getProducts());
-        orderRepo.add(order);
+        return orderRepo.add(order);//Mock!
     }
 
     private void checkProductsExist(List<Product> produktsFromTheOrder){
@@ -57,10 +36,7 @@ public class ShopService {
         }
     }
 
-    public ShopService(OrderRepo orderRepo, ProductRepo productRepo) {
-        this.orderRepo = orderRepo;
-        this.productRepo = productRepo;
-    }
+
 
     @Override
     public boolean equals(Object o) {

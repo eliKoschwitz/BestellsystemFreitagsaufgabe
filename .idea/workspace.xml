@@ -5,8 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e41ae7e2-674d-4c8b-8abf-e45fe279d4b9" name="Changes" comment="Order Service Done&#10;Developed with TDD&#10;All Tests are running fine">
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/neuefische/products/Product.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/neuefische/OrderRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/neuefische/OrderRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/neuefische/ShopService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/neuefische/ShopService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/de/neuefische/ShopServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/de/neuefische/ShopServiceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -64,7 +66,7 @@
       <recent name="de.neuefische" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ShopServiceTest">
+  <component name="RunManager" selected="JUnit.ShopServiceTest.addOrderShopServiceMOCK">
     <configuration name="ShopServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="BestellsystemFreitagsaufgabe" />
       <extension name="coverage">
@@ -80,6 +82,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ShopServiceTest.addOrderShopServiceMOCK" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BestellsystemFreitagsaufgabe" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="de.neuefische.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="de.neuefische" />
+      <option name="MAIN_CLASS_NAME" value="de.neuefische.ShopServiceTest" />
+      <option name="METHOD_NAME" value="addOrderShopServiceMOCK" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ShopServiceTest.getProductRepo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="BestellsystemFreitagsaufgabe" />
       <extension name="coverage">
@@ -91,22 +109,6 @@
       <option name="PACKAGE_NAME" value="de.neuefische" />
       <option name="MAIN_CLASS_NAME" value="de.neuefische.ShopServiceTest" />
       <option name="METHOD_NAME" value="getProductRepo" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ShopServiceTest.listOrdersShopService" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="BestellsystemFreitagsaufgabe" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="de.neuefische.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="de.neuefische" />
-      <option name="MAIN_CLASS_NAME" value="de.neuefische.ShopServiceTest" />
-      <option name="METHOD_NAME" value="listOrdersShopService" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -146,11 +148,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ShopServiceTest.addOrderShopServiceMOCK" />
         <item itemvalue="JUnit.ShopServiceTest" />
         <item itemvalue="JUnit.ShopServiceTest.getProductRepo" />
         <item itemvalue="JUnit.ShopServiceTest.listProductRepo" />
         <item itemvalue="JUnit.ShopServiceTest.makeOrderShopService" />
-        <item itemvalue="JUnit.ShopServiceTest.listOrdersShopService" />
       </list>
     </recent_temporary>
   </component>
@@ -165,6 +167,7 @@
       <workItem from="1669970495468" duration="39802000" />
       <workItem from="1670166554554" duration="930000" />
       <workItem from="1670169920830" duration="868000" />
+      <workItem from="1670407309767" duration="4216000" />
     </task>
     <task id="LOCAL-00001" summary="Init:In the beginning God created the heaven and the earth">
       <created>1669970694160</created>

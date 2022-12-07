@@ -7,6 +7,8 @@ import org.junit.jupiter.api.Test;
 import java.util.ArrayList;
 import java.util.List;
 
+import static org.mockito.Mockito.*;
+
 
 class ShopServiceTest {
 
@@ -196,6 +198,26 @@ class ShopServiceTest {
             Assertions.assertTrue(true);
         }
     }
+
+    //OrderRepo orderRepo = new OrderRepo(new ArrayList<>(List.of(new Order(1, new ArrayList<Product>(List.of(new Product(1, "Apfel")))))));
+    ProductRepo productRepo = new ProductRepo(new ArrayList<>(List.of(new Product(1, "Apfel"),(new Product(2, "Kirsche")))));
+
+    @Test
+    void addOrderShopServiceMOCK(){
+        // GIVEN
+        OrderRepo repo = mock(OrderRepo.class);
+        ShopService shopService = new ShopService(repo,productRepo);
+        Order order = new Order(2, new ArrayList<Product>(List.of(new Product(2, "Kirsche"))));
+
+        when(repo.add(order)).thenReturn(true);
+
+        // WHEN
+        boolean actual = shopService.addOrder(order);
+        // THEN
+        Assertions.assertEquals(true, actual);
+        verify(repo).add(order);
+    }
+
 
     /*
     @Test
